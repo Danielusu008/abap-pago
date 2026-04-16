@@ -1,37 +1,13 @@
-CLASS zcl_ejemplo_der DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_EJEMPLO_DER definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-   INTERFACES if_oo_adt_classrun.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_ejemplo_der IMPLEMENTATION.
-  METHOD if_oo_adt_classrun~main.
-
-
-
-
-data  lv_resultado type i value 2 .
-
-
-
-
-
-while lv_resultado < 5.
-
-lv_resultado = lv_resultado + 1.
-
-
-endwHILE.
-
-out->write( lv_resultado ).
-
-  ENDMETHOD.
-
+CLASS ZCL_EJEMPLO_DER IMPLEMENTATION.
 ENDCLASS.
